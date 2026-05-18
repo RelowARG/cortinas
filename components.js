@@ -104,6 +104,7 @@ const footerHTML = `
     </div>
     <div class="container cm-footer-bottom">
         <div>&copy; ${new Date().getFullYear()} Cortinas.Deluxe - Todos los derechos reservados.</div>
+        <div>Desarrollado por <span style="color: var(--accent); font-weight: 600;">Relow</span></div>
     </div>
 </footer>
 `;
