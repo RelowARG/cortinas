@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajos Realizados | Cortinas Deluxe</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cm-portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; margin-top: 40px;}
+        .cm-portfolio-item { width: 100%; height: 250px; border-radius: 4px; overflow: hidden; position: relative; border: 1px solid var(--border-color);}
+        .cm-portfolio-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;}
+        .cm-portfolio-item:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <header id="header-placeholder"></header>
+
+    <section class="cm-hero" style="grid-template-columns: 1fr; min-height: 40vh;">
+        <div class="cm-hero-left" style="padding-bottom: 40px;">
+            <div class="cm-tag">Portfolio</div>
+            <h1 class="cm-h1">Nuestros<br><em>Trabajos.</em></h1>
+            <p class="cm-hero-desc">Una imagen vale más que mil palabras. Conocé algunas de nuestras instalaciones y reparaciones recientes.</p>
+        </div>
+    </section>
+
+    <div class="container" style="padding: 80px 20px;">
+        <div class="cm-portfolio-grid">
+            <div class="cm-portfolio-item"><img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=600" alt="Instalación 1"></div>
+            <div class="cm-portfolio-item"><img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=600" alt="Instalación 2"></div>
+            <div class="cm-portfolio-item"><img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=600" alt="Instalación 3"></div>
+            <div class="cm-portfolio-item"><img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&q=80&w=600" alt="Instalación 4"></div>
+            <div class="cm-portfolio-item"><img src="https://images.unsplash.com/photo-1541624606775-8167f259f939?auto=format&fit=crop&q=80&w=600" alt="Instalación 5"></div>
+            <div class="cm-portfolio-item"><img src="https://images.unsplash.com/photo-1599696232233-02f5a6396e95?auto=format&fit=crop&q=80&w=600" alt="Instalación 6"></div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <script src="components.js"></script>
+</body>
+</html>

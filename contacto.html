@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Cortinas Deluxe</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cm-contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 40px; align-items: start;}
+        .cm-form-group { margin-bottom: 24px; }
+        .cm-form-group label { display: block; font-family: var(--font-heading); font-weight: 700; text-transform: uppercase; font-size: 14px; letter-spacing: 1px; margin-bottom: 8px; color: var(--text-main); }
+        .cm-form-group input, .cm-form-group textarea { width: 100%; padding: 16px; border: 1px solid var(--border-color); background: var(--bg-main); color: var(--text-main); font-family: var(--font-body); font-size: 16px; outline: none; border-radius: 4px; transition: border-color 0.2s;}
+        .cm-form-group input:focus, .cm-form-group textarea:focus { border-color: var(--accent); }
+        .cm-contact-info-card { background: var(--bg-card); padding: 32px; border-radius: 4px; margin-bottom: 24px; border: 1px solid var(--border-color);}
+        @media (max-width: 900px) { .cm-contact-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header id="header-placeholder"></header>
+
+    <section class="cm-hero" style="grid-template-columns: 1fr; min-height: 40vh;">
+        <div class="cm-hero-left" style="padding-bottom: 20px;">
+            <div class="cm-tag">Central Operativa</div>
+            <h1 class="cm-h1">Presupuestos<br><em>Urgentes</em>.</h1>
+            <p class="cm-hero-desc">Escribinos o llamanos. Respondemos todas las consultas técnicas y solicitudes en tiempo récord.</p>
+        </div>
+    </section>
+
+    <div class="container" style="padding: 60px 20px 100px 20px;">
+        <div class="cm-contact-grid">
+            <div>
+                <div class="cm-contact-info-card">
+                    <div style="font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Línea Directa</div>
+                    <div style="font-family: var(--font-heading); font-size: 32px; font-weight: 800; color: var(--text-main); margin-bottom: 8px;">11 2345-6789</div>
+                    <p style="color: var(--text-muted); font-size: 15px;">Atención telefónica y WhatsApp 24 hs.</p>
+                </div>
+                <div class="cm-contact-info-card">
+                    <div style="font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Correo Electrónico</div>
+                    <div style="font-family: var(--font-heading); font-size: 24px; font-weight: 800; color: var(--text-main); margin-bottom: 8px;">emilianovidal8@gmail.com</div>
+                    <p style="color: var(--text-muted); font-size: 15px;">Para planos, licitaciones o pedidos.</p>
+                </div>
+                <div class="cm-contact-info-card">
+                    <div style="font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Zona de Cobertura</div>
+                    <div style="font-family: var(--font-heading); font-size: 28px; font-weight: 800; color: var(--text-main); margin-bottom: 8px;">CABA y GBA</div>
+                    <p style="color: var(--text-muted); font-size: 15px;">Llegamos a todas las localidades con unidades móviles.</p>
+                </div>
+            </div>
+
+            <div style="background: var(--bg-card); padding: 48px; border-radius: 4px; border: 1px solid var(--border-color);">
+                <h3 style="font-family: var(--font-heading); font-weight: 900; font-size: 32px; text-transform: uppercase; margin-bottom: 32px; color: var(--text-main);">Formulario de Obra</h3>
+                <form action="mailto:info@cortinasdeluxe.com.ar" method="POST" enctype="text/plain">
+                    <div class="cm-form-group">
+                        <label>Nombre / Empresa</label>
+                        <input type="text" name="Nombre" placeholder="Tu nombre o razón social" required>
+                    </div>
+                    <div class="cm-form-group">
+                        <label>Teléfono de Contacto</label>
+                        <input type="tel" name="Tel" placeholder="Ej: 11 1234-5678" required>
+                    </div>
+                    <div class="cm-form-group">
+                        <label>Servicio Requerido</label>
+                        <input type="text" name="Servicio" placeholder="Ej: Reparación / Motorización">
+                    </div>
+                    <div class="cm-form-group">
+                        <label>Mensaje</label>
+                        <textarea name="Mensaje" rows="5" placeholder="Detalle del trabajo..." required></textarea>
+                    </div>
+                    <button type="submit" class="cm-btn-primary" style="width: 100%;">Enviar Solicitud</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <script src="components.js"></script>
+</body>
+</html>

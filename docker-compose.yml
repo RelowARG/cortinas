@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: cortinas_deluxe_web
+    restart: unless-stopped
+    ports:
+      - "8080:8080" # Expuesto internamente para Cloudflare Tunnel

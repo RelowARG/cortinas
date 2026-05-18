@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Servicios | Cortinas.Metal</title>
+    <meta name="description" content="Fabricación, venta e instalación de cortinas de enrollar en PVC, Madera y Aluminio. Motorización y sistemas Roller.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Clases extra específicas para el catálogo brutalista */
+        .cm-catalog-section { padding: 60px 5%; border-bottom: 4px solid var(--border-color); }
+        .cm-catalog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; margin-top: 32px; }
+        .cm-material-card { background: #fff; border: 2px solid var(--border-color); padding: 32px; position: relative; }
+        .cm-material-card:hover { border-color: var(--text-dark); }
+        .cm-material-tag { background: var(--text-dark); color: var(--text-light); font-family: var(--font-heading); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 12px; padding: 4px 12px; position: absolute; top: -12px; left: 24px; }
+        .cm-material-title { font-family: var(--font-heading); font-size: 28px; text-transform: uppercase; margin-bottom: 16px; color: var(--text-dark); }
+        .cm-tech-list { list-style: none; margin-top: 20px; }
+        .cm-tech-list li { font-size: 14px; color: var(--text-muted); margin-bottom: 8px; padding-left: 16px; position: relative; }
+        .cm-tech-list li::before { content: '■'; color: var(--accent); position: absolute; left: 0; font-size: 10px; top: 4px; }
+    </style>
+</head>
+<body>
+    
+    <header id="header-placeholder"></header>
+
+    <section class="cm-hero" style="grid-template-columns: 1fr;">
+        <div class="cm-hero-left" style="padding-bottom: 60px;">
+            <div class="cm-tag">Catálogo Técnico</div>
+            <h1 class="cm-h1">Soluciones<br><em>Estructurales</em><br>para aberturas.</h1>
+            <p class="cm-hero-desc" style="max-width: 600px;">Fabricamos e instalamos sistemas de persianas y cortinas con materiales de grado industrial. Superamos los estándares del mercado en durabilidad, aislación y seguridad.</p>
+        </div>
+    </section>
+
+    <div class="cm-catalog-section" style="background: var(--bg-main);">
+        <div class="cm-section-header">
+            <div class="cm-section-num">01</div>
+            <div class="cm-section-title">Cortinas de<br>Enrollar</div>
+        </div>
+        <p style="color: var(--text-muted); max-width: 700px; font-size: 16px; margin-bottom: 40px;">Fabricación a medida. Reemplazamos tu vieja cortina respetando las guías originales o instalamos sistemas completos desde cero con accesorios galvanizados antioxidantes.</p>
+
+        <div class="cm-catalog-grid">
+            <div class="cm-material-card">
+                <div class="cm-material-tag">Económico & Versátil</div>
+                <h3 class="cm-material-title">PVC Súper Reforzado</h3>
+                <p style="color: var(--text-muted); font-size: 15px;">Lamas de extrusión de alta densidad. Ignífugas, evitan la formación de hongos y son 100% libres de mantenimiento. Ideales para el clima húmedo de Buenos Aires.</p>
+                <ul class="cm-tech-list">
+                    <li>Calidad Estándar o Súper Reforzada.</li>
+                    <li>Lavables con agua y detergente.</li>
+                    <li>Resistencia a ácidos y alcohol.</li>
+                    <li>Múltiples colores (Blanco, Gris, Símil Madera).</li>
+                </ul>
+            </div>
+
+            <div class="cm-material-card">
+                <div class="cm-material-tag">Premium & Aislante</div>
+                <h3 class="cm-material-title">Aluminio Inyectado</h3>
+                <p style="color: var(--text-muted); font-size: 15px;">El estándar más alto del mercado. Lamas de aluminio rellenas con espuma de poliuretano expandido de alta densidad. Bloqueo térmico y acústico superior.</p>
+                <ul class="cm-tech-list">
+                    <li>Insonorización extrema (ideal avenidas).</li>
+                    <li>Aislación térmica (ahorro en aire acondicionado).</li>
+                    <li>Peso ultraliviano (prolonga la vida del mecanismo).</li>
+                    <li>Pintura horneada inalterable al sol.</li>
+                </ul>
+            </div>
+
+            <div class="cm-material-card">
+                <div class="cm-material-tag">Clásico & Pesado</div>
+                <h3 class="cm-material-title">Madera (Tipo Barrio)</h3>
+                <p style="color: var(--text-muted); font-size: 15px;">Estructuras de madera secada a horno para evitar deformaciones. Sistema tradicional "Barrio" que permite ventilación y entrada de luz graduada.</p>
+                <ul class="cm-tech-list">
+                    <li>Madera seleccionada (Raulí, Kiri).</li>
+                    <li>Herrajes pesados reforzados.</li>
+                    <li>Tratamiento protector con barniz marino.</li>
+                    <li>Restauración de paños antiguos.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="cm-catalog-section" style="background: var(--bg-hover);">
+        <div class="cm-section-header">
+            <div class="cm-section-num">02</div>
+            <div class="cm-section-title">Motorización y<br>Automatización</div>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center;">
+            <div>
+                <h3 class="cm-material-title" style="font-size: 24px;">Tecnología Tubular Oculta</h3>
+                <p style="color: var(--text-muted); font-size: 16px; margin-bottom: 20px;">Eliminá el esfuerzo físico y las cintas cortadas. Instalamos motores tubulares directamente dentro del eje de tu cortina existente. Una solución invisible, silenciosa y segura.</p>
+                <ul class="cm-tech-list" style="margin-bottom: 30px;">
+                    <li><strong>A Tecla:</strong> Llave inversora de pared de embutir o exterior.</li>
+                    <li><strong>Control Remoto:</strong> Mando a distancia multicanal (manejá hasta 5 cortinas con el mismo control).</li>
+                    <li><strong>Smart Home:</strong> Módulos WiFi compatibles con Alexa y Google Home.</li>
+                    <li>Límites de carrera precisos ajustados por nuestros técnicos.</li>
+                </ul>
+                <a href="https://wa.me/5491125394819" class="cm-btn-primary" style="font-size: 13px; padding: 12px 24px;">Cotizar Motorización</a>
+            </div>
+            <div style="background: var(--bg-dark); padding: 40px; border-left: 4px solid var(--accent);">
+                <div style="color: var(--accent); font-family: var(--font-heading); font-weight: 700; font-size: 18px; margin-bottom: 10px; text-transform: uppercase;">Garantía Escrita</div>
+                <p style="color: #9A9A94; font-size: 15px;">Todos nuestros motores cuentan con <strong>garantía directa de 2 a 5 años</strong> (dependiendo la marca). Si falla el mecanismo, nuestro equipo técnico lo reemplaza sin excusas ni demoras.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cm-catalog-section" style="background: var(--bg-main);">
+        <div class="cm-section-header">
+            <div class="cm-section-num">03</div>
+            <div class="cm-section-title">Roller y<br>Americanas</div>
+        </div>
+
+        <div class="cm-catalog-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+            <div class="cm-material-card">
+                <h3 class="cm-material-title">Sistemas Roller</h3>
+                <p style="color: var(--text-muted); font-size: 15px; margin-bottom: 20px;">Telas técnicas de última generación para diseño interior residencial y corporativo.</p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div>
+                        <strong style="font-family: var(--font-heading); text-transform: uppercase; color: var(--text-dark);">Blackout</strong>
+                        <p style="font-size: 13px; color: var(--text-muted);">100% oscuridad. Telas tricapa de fibra de vidrio y PVC. Fáciles de lavar.</p>
+                    </div>
+                    <div>
+                        <strong style="font-family: var(--font-heading); text-transform: uppercase; color: var(--text-dark);">Sunscreen</strong>
+                        <p style="font-size: 13px; color: var(--text-muted);">Microperforadas. Filtran rayos UV y calor sin perder la visión al exterior.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cm-material-card">
+                <h3 class="cm-material-title">Cortinas Americanas</h3>
+                <p style="color: var(--text-muted); font-size: 15px; margin-bottom: 20px;">Control direccional preciso de la luz mediante giro de lamas.</p>
+                <ul class="cm-tech-list">
+                    <li><strong>Aluminio 16mm y 25mm:</strong> Perfilería liviana, ideal oficinas.</li>
+                    <li><strong>Madera 50mm:</strong> Calidez absoluta, cenefas decorativas y cintas de algodón.</li>
+                    <li>Mecanismos autoblocantes de alto tránsito.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="cm-urgency-banner" style="margin-top: 0;">
+        <div>
+            <div class="cm-urgency-text">¿No sabés qué material elegir?</div>
+            <div class="cm-urgency-sub">Hablémoslo. Te asesoramos técnicamente y presupuestamos sin compromiso.</div>
+        </div>
+        <a href="https://wa.me/5491125394819" class="cm-btn-white">Solicitar Asesoramiento</a>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <script src="components.js"></script>
+</body>
+</html>
