@@ -1,6 +1,7 @@
 const CONTACT_DATA = { 
     name: "Cortinas Deluxe",
     phone: "+54 9 11 2539-4819", 
+    phoneClean: "5491125394819",
     email: "emilianovidal8@gmail.com", 
     whatsappLink: "https://wa.me/5491125394819?text=Hola%20Cortinas.Deluxe%2C%20quiero%20solicitar%20un%20presupuesto%20para%20mis%20cortinas." 
 };
@@ -22,7 +23,7 @@ const topbarHTML = `
         </div>
     </div>
     <div class="cm-topbar-right">
-        <a href="tel:+549${CONTACT_DATA.phone}">
+        <a href="tel:+${CONTACT_DATA.phoneClean}">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             ${CONTACT_DATA.phone}
         </a>
@@ -96,7 +97,7 @@ const footerHTML = `
         <div>
             <h4>Contacto</h4>
             <ul>
-                <li><a href="tel:+549${CONTACT_DATA.phone}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> ${CONTACT_DATA.phone}</a></li>
+                <li><a href="tel:+${CONTACT_DATA.phoneClean}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> ${CONTACT_DATA.phone}</a></li>
                 <li><a href="mailto:${CONTACT_DATA.email}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> ${CONTACT_DATA.email}</a></li>
                 <li><a href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> CABA y GBA</a></li>
             </ul>
@@ -110,8 +111,27 @@ const footerHTML = `
 `;
 
 document.addEventListener("DOMContentLoaded", () => {
+    // 1. Cargar Navbar y Footer
     const headerTarget = document.getElementById("header-placeholder");
     const footerTarget = document.getElementById("footer-placeholder");
     if (headerTarget) headerTarget.innerHTML = topbarHTML + navbarHTML;
     if (footerTarget) footerTarget.innerHTML = footerHTML;
+
+    // 2. Lógica de los Carruseles Nativos
+    document.querySelectorAll('.cm-carousel-container').forEach(container => {
+        const track = container.querySelector('.cm-carousel');
+        const prevBtn = container.querySelector('.cm-carousel-btn.prev');
+        const nextBtn = container.querySelector('.cm-carousel-btn.next');
+
+        if(prevBtn && nextBtn && track) {
+            prevBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                track.scrollBy({ left: -track.offsetWidth, behavior: 'smooth' });
+            });
+            nextBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                track.scrollBy({ left: track.offsetWidth, behavior: 'smooth' });
+            });
+        }
+    });
 });

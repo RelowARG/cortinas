@@ -20,43 +20,106 @@
             <h1 class="cm-h1">Cortinas de<br><em>Enrollar</em> a medida.</h1>
             <p class="cm-hero-desc" style="max-width: 600px;">Reemplazamos tu vieja cortina respetando las guías originales o instalamos sistemas completos desde cero con accesorios de grado industrial.</p>
             <div class="cm-hero-actions">
-                <a href="https://wa.me/5491125394819" class="cm-btn-primary">Solicitar cotización</a>
+                <a href="https://wa.me/5491125394819?text=Hola%20Cortinas.Deluxe%2C%20quiero%20solicitar%20un%20presupuesto%20para%20mis%20cortinas." class="cm-btn-primary">Solicitar cotización</a>
             </div>
         </div>
     </section>
 
     <div class="cm-services-section">
-        <div class="cm-services-grid">
-            <div class="cm-service-card" style="padding: 40px;">
+        <div class="cm-services-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+            
+            <!-- 1. PVC -->
+            <div class="cm-service-card" style="padding: 32px;">
                 <div style="font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Económico & Versátil</div>
-                <h3 style="font-family: var(--font-heading); font-size: 28px; text-transform: uppercase; color: var(--text-dark); margin-bottom: 16px;">PVC Súper Reforzado</h3>
-                <p style="color: var(--text-muted-dark); font-size: 15px;">Lamas de extrusión de alta densidad. Ignífugas, evitan hongos y 100% libres de mantenimiento.</p>
+                <h3 style="font-family: var(--font-heading); font-size: 28px; text-transform: uppercase; color: var(--text-dark); margin-bottom: 24px;">PVC Súper Reforzado</h3>
+                
+                <div class="cm-carousel-container">
+                    <button class="cm-carousel-btn prev" aria-label="Anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                    <div class="cm-carousel">
+                        <div class="cm-carousel-slide"><img src="images/pvc/1.jpg" alt="PVC obra 1"></div>
+                        <div class="cm-carousel-slide"><img src="images/pvc/2.jpg" alt="PVC obra 2"></div>
+                        <div class="cm-carousel-slide"><img src="images/pvc/3.jpg" alt="PVC obra 3"></div>
+                    </div>
+                    <button class="cm-carousel-btn next" aria-label="Siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                </div>
+
+                <p style="color: var(--text-muted-dark); font-size: 15px;">Lamas de extrusión de alta densidad. Ignífugas, evitan hongos y son 100% libres de mantenimiento.</p>
                 <ul class="cm-tech-list">
                     <li>Calidad Estándar o Súper Reforzada.</li>
                     <li>Resistencia a ácidos y alcohol.</li>
-                    <li>Múltiples colores (Blanco, Gris, Símil Madera).</li>
+                    <li>Colores: Blanco, Gris, Símil Madera.</li>
                 </ul>
             </div>
-            <div class="cm-service-card" style="padding: 40px;">
+
+            <!-- 2. ALUMINIO -->
+            <div class="cm-service-card" style="padding: 32px;">
                 <div style="font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Premium & Aislante</div>
-                <h3 style="font-family: var(--font-heading); font-size: 28px; text-transform: uppercase; color: var(--text-dark); margin-bottom: 16px;">Aluminio Inyectado</h3>
+                <h3 style="font-family: var(--font-heading); font-size: 28px; text-transform: uppercase; color: var(--text-dark); margin-bottom: 24px;">Aluminio Inyectado</h3>
+                
+                <div class="cm-carousel-container">
+                    <button class="cm-carousel-btn prev" aria-label="Anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                    <div class="cm-carousel">
+                        <div class="cm-carousel-slide"><img src="images/aluminio/1.jpg" alt="Aluminio obra 1"></div>
+                        <div class="cm-carousel-slide"><img src="images/aluminio/2.jpg" alt="Aluminio obra 2"></div>
+                        <div class="cm-carousel-slide"><img src="images/aluminio/3.jpg" alt="Aluminio obra 3"></div>
+                    </div>
+                    <button class="cm-carousel-btn next" aria-label="Siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                </div>
+
                 <p style="color: var(--text-muted-dark); font-size: 15px;">Lamas rellenas con espuma de poliuretano expandido. Bloqueo térmico y acústico superior.</p>
                 <ul class="cm-tech-list">
                     <li>Insonorización extrema (ideal avenidas).</li>
-                    <li>Aislación térmica (ahorro en climatización).</li>
+                    <li>Aislación térmica (ahorro energético).</li>
                     <li>Pintura horneada inalterable al sol.</li>
                 </ul>
             </div>
-            <div class="cm-service-card" style="padding: 40px;">
+
+            <!-- 3. MADERA -->
+            <div class="cm-service-card" style="padding: 32px;">
                 <div style="font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Clásico & Pesado</div>
-                <h3 style="font-family: var(--font-heading); font-size: 28px; text-transform: uppercase; color: var(--text-dark); margin-bottom: 16px;">Madera (Tipo Barrio)</h3>
+                <h3 style="font-family: var(--font-heading); font-size: 28px; text-transform: uppercase; color: var(--text-dark); margin-bottom: 24px;">Madera (Tipo Barrio)</h3>
+                
+                <div class="cm-carousel-container">
+                    <button class="cm-carousel-btn prev" aria-label="Anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                    <div class="cm-carousel">
+                        <div class="cm-carousel-slide"><img src="images/madera/1.jpg" alt="Madera obra 1"></div>
+                        <div class="cm-carousel-slide"><img src="images/madera/2.jpg" alt="Madera obra 2"></div>
+                        <div class="cm-carousel-slide"><img src="images/madera/3.jpg" alt="Madera obra 3"></div>
+                    </div>
+                    <button class="cm-carousel-btn next" aria-label="Siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                </div>
+
                 <p style="color: var(--text-muted-dark); font-size: 15px;">Madera secada a horno. Sistema "Barrio" que permite ventilación y entrada de luz graduada.</p>
                 <ul class="cm-tech-list">
                     <li>Madera seleccionada (Raulí, Kiri).</li>
                     <li>Herrajes pesados reforzados.</li>
-                    <li>Tratamiento con barniz marino.</li>
+                    <li>Tratamiento protector con barniz marino.</li>
                 </ul>
             </div>
+
+            <!-- 4. ROLLER (NUEVO) -->
+            <div class="cm-service-card" style="padding: 32px;">
+                <div style="font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px;">Diseño & Control Solar</div>
+                <h3 style="font-family: var(--font-heading); font-size: 28px; text-transform: uppercase; color: var(--text-dark); margin-bottom: 24px;">Roller Blackout & Sunscreen</h3>
+                
+                <div class="cm-carousel-container">
+                    <button class="cm-carousel-btn prev" aria-label="Anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                    <div class="cm-carousel">
+                        <div class="cm-carousel-slide"><img src="images/roller/1.jpg" alt="Roller Blackout"></div>
+                        <div class="cm-carousel-slide"><img src="images/roller/2.jpg" alt="Roller Sunscreen"></div>
+                        <div class="cm-carousel-slide"><img src="images/roller/3.jpg" alt="Sistema Roller Doble"></div>
+                    </div>
+                    <button class="cm-carousel-btn next" aria-label="Siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                </div>
+
+                <p style="color: var(--text-muted-dark); font-size: 15px;">Telas técnicas lavables que funcionan como aislante térmico y filtro UV[cite: 8]. Ideal para oficinas y residencias.</p>
+                <ul class="cm-tech-list">
+                    <li><strong>Blackout:</strong> 100% oscuridad garantizada. Telas tricapa[cite: 8].</li>
+                    <li><strong>Sunscreen:</strong> Microperforadas. Filtran el sol pero permiten ver hacia afuera[cite: 8].</li>
+                    <li><strong>Sistema Doble:</strong> Ambos sistemas en el mismo soporte[cite: 8].</li>
+                </ul>
+            </div>
+
         </div>
     </div>
 

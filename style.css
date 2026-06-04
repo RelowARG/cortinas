@@ -148,3 +148,61 @@ body { font-family: var(--font-body); background-color: var(--bg-main); color: v
 .cm-footer a:hover { color: var(--text-main); }
 .cm-footer-bottom { border-top: 1px solid var(--border-color); padding-top: 24px; display: flex; justify-content: space-between; color: var(--text-muted); font-size: 12px; }
 @media (max-width: 900px) { .cm-footer-grid { grid-template-columns: 1fr; } }
+/* ==========================================================================
+   CARRUSELES NATIVOS (CSS SCROLL SNAP)
+   ========================================================================== */
+.cm-carousel-container { 
+  position: relative; 
+  width: 100%; 
+  border-radius: 4px; 
+  overflow: hidden; 
+  margin-bottom: 24px;
+}
+.cm-carousel { 
+  display: flex; 
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory; 
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  scroll-behavior: smooth; 
+}
+.cm-carousel::-webkit-scrollbar { display: none; /* Chrome/Safari */ }
+.cm-carousel-slide { 
+  min-width: 100%; 
+  height: 250px; 
+  scroll-snap-align: start; 
+  position: relative; 
+}
+.cm-carousel-slide img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  display: block; 
+}
+.cm-carousel-btn { 
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  background: rgba(17, 17, 17, 0.85); 
+  color: var(--accent); 
+  border: 1px solid var(--accent); 
+  width: 36px; 
+  height: 36px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  cursor: pointer; 
+  z-index: 2; 
+  border-radius: 4px; 
+  transition: all 0.2s; 
+}
+.cm-carousel-btn:hover { 
+  background: var(--accent); 
+  color: #fff; 
+}
+.cm-carousel-btn.prev { left: 8px; }
+.cm-carousel-btn.next { right: 8px; }
+
+/* Ajuste específico para index.html (mantiene el ícono flotante) */
+.cm-service-img .cm-carousel-container { margin-bottom: 0; }
+.cm-service-img .cm-service-icon-abs { z-index: 3; }
