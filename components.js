@@ -2,7 +2,7 @@ const CONTACT_DATA = {
     name: "Cortinas Deluxe",
     phone: "+54 9 11 2539-4819", 
     phoneClean: "5491125394819",
-    email: "emilianovidal8@gmail.com", 
+    email: "cortinas.deluxe@gmail.com", 
     whatsappLink: "https://wa.me/5491125394819?text=Hola%20Cortinas.Deluxe%2C%20quiero%20solicitar%20un%20presupuesto%20para%20mis%20cortinas." 
 };
 
