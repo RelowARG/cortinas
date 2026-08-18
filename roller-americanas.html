@@ -2,15 +2,18 @@
 <html lang="es">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1SHH6PLGEV">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1SHH6PLGEV');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SHH6PLGEV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      // Google Analytics
+      gtag('config', 'G-1SHH6PLGEV');
+      // Google Ads - conversión de llamada (número dinámico)
+      gtag('config', 'AW-18227093387/uGJpCOrmrt4cEIu_rfND', {
+        'phone_conversion_number': '1125831604'
+      });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cortinas Roller y Americanas | Cortinas.Metal</title>
@@ -34,7 +37,7 @@
             <div class="cm-tag">Diseño Interior</div>
             <h1 class="cm-h1">Sistemas <em>Roller</em><br>y Americanas.</h1>
             <p class="cm-hero-desc" style="max-width: 600px;">La solución más moderna y estética para el control solar en interiores. Ideal para livings, oficinas corporativas y dormitorios.</p>
-            <a href="https://wa.me/+549112831604 class="cm-btn-primary">Ver muestrarios</a>
+            <a href="https://wa.me/+549112831604" onclick="gtag('event', 'conversion', {'send_to': 'AW-18227093387/MOEfCOaE9eMcEIu_rfND'});" class="cm-btn-primary">Ver muestrarios</a>
         </div>
     </section>
 

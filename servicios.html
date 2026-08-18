@@ -2,15 +2,18 @@
 <html lang="es">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1SHH6PLGEV">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1SHH6PLGEV');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SHH6PLGEV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      // Google Analytics
+      gtag('config', 'G-1SHH6PLGEV');
+      // Google Ads - conversión de llamada (número dinámico)
+      gtag('config', 'AW-18227093387/uGJpCOrmrt4cEIu_rfND', {
+        'phone_conversion_number': '1125831604'
+      });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Servicios | Cortinas.Metal</title>
@@ -103,7 +106,7 @@
                     <li><strong>Smart Home:</strong> Módulos WiFi compatibles con Alexa y Google Home.</li>
                     <li>Límites de carrera precisos ajustados por nuestros técnicos.</li>
                 </ul>
-                <a href="https://wa.me/5491125831604 class="cm-btn-primary" style="font-size: 13px; padding: 12px 24px;">Cotizar Motorización</a>
+                <a href="https://wa.me/5491125831604" onclick="gtag('event', 'conversion', {'send_to': 'AW-18227093387/MOEfCOaE9eMcEIu_rfND'});" class="cm-btn-primary" style="font-size: 13px; padding: 12px 24px;">Cotizar Motorización</a>
             </div>
             <div style="background: var(--bg-dark); padding: 40px; border-left: 4px solid var(--accent);">
                 <div style="color: var(--accent); font-family: var(--font-heading); font-weight: 700; font-size: 18px; margin-bottom: 10px; text-transform: uppercase;">Garantía Escrita</div>
@@ -151,7 +154,7 @@
             <div class="cm-urgency-text">¿No sabés qué material elegir?</div>
             <div class="cm-urgency-sub">Hablémoslo. Te asesoramos técnicamente y presupuestamos sin compromiso.</div>
         </div>
-        <a href="https://wa.me/5491125831604" class="cm-btn-white">Solicitar Asesoramiento</a>
+        <a href="https://wa.me/5491125831604" onclick="gtag('event', 'conversion', {'send_to': 'AW-18227093387/MOEfCOaE9eMcEIu_rfND'});" class="cm-btn-white">Solicitar Asesoramiento</a>
     </div>
 
     <div id="footer-placeholder"></div>

@@ -2,15 +2,18 @@
 <html lang="es">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1SHH6PLGEV">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1SHH6PLGEV');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SHH6PLGEV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      // Google Analytics
+      gtag('config', 'G-1SHH6PLGEV');
+      // Google Ads - conversión de llamada (número dinámico)
+      gtag('config', 'AW-18227093387/uGJpCOrmrt4cEIu_rfND', {
+        'phone_conversion_number': '1125831604'
+      });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mantenimiento de Cortinas | Cortinas Deluxe</title>
@@ -26,7 +29,7 @@
             <h1 class="cm-h1">Que tu cortina<br><em>nunca</em> te deje a pie.</h1>
             <p class="cm-hero-desc" style="max-width: 600px;">El mantenimiento preventivo duplica la vida útil de tus motores y mecanismos. Ideal para locales comerciales, garajes y consorcios de alto tránsito.</p>
             <div class="cm-hero-actions">
-                <a href="https://wa.me/+5491125831604" class="cm-btn-primary">Agendar Revisión</a>
+                <a href="https://wa.me/5491125831604" onclick="gtag('event', 'conversion', {'send_to': 'AW-18227093387/MOEfCOaE9eMcEIu_rfND'});" class="cm-btn-primary">Agendar Revisión</a>
             </div>
         </div>
     </section>
