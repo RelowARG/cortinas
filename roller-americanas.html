@@ -14,6 +14,23 @@
         'phone_conversion_number': '1125831604'
       });
     </script>
+    <script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18227093387/MOEfCOaE9eMcEIu_rfND',
+    'event_callback': callback
+  });
+
+  return false;
+}
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cortinas Roller y Americanas | Cortinas.Metal</title>
@@ -37,7 +54,7 @@
             <div class="cm-tag">Diseño Interior</div>
             <h1 class="cm-h1">Sistemas <em>Roller</em><br>y Americanas.</h1>
             <p class="cm-hero-desc" style="max-width: 600px;">La solución más moderna y estética para el control solar en interiores. Ideal para livings, oficinas corporativas y dormitorios.</p>
-            <a href="https://wa.me/+549112831604" onclick="gtag('event', 'conversion', {'send_to': 'AW-18227093387/MOEfCOaE9eMcEIu_rfND'});" class="cm-btn-primary">Ver muestrarios</a>
+            <a href="https://wa.me/+549112831604" onclick="return gtag_report_conversion(this.href);" class="cm-btn-primary">Ver muestrarios</a>
         </div>
     </section>
 

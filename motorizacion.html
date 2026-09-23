@@ -14,6 +14,23 @@
         'phone_conversion_number': '1125831604'
       });
     </script>
+    <script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18227093387/MOEfCOaE9eMcEIu_rfND',
+    'event_callback': callback
+  });
+
+  return false;
+}
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motorización Tubular | Cortinas Deluxe</title>
@@ -33,7 +50,7 @@
             <h1 class="cm-h1"><em>Motorización</em><br>Tubular Oculta.</h1>
             <p class="cm-hero-desc" style="max-width: 600px;">Eliminá el esfuerzo físico y las cintas cortadas. Instalamos motores directamente dentro del eje de tu cortina existente. Invisible y silencioso.</p>
             <div class="cm-hero-actions">
-                <a href="https://wa.me/5491125831604" onclick="gtag('event', 'conversion', {'send_to': 'AW-18227093387/MOEfCOaE9eMcEIu_rfND'});" class="cm-btn-primary">Consultar precios</a>
+                <a href="https://wa.me/5491125831604" onclick="return gtag_report_conversion(this.href);" class="cm-btn-primary">Consultar precios</a>
             </div>
         </div>
     </section>

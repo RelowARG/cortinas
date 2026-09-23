@@ -14,6 +14,23 @@
         'phone_conversion_number': '1125831604'
       });
     </script>
+    <script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18227093387/MOEfCOaE9eMcEIu_rfND',
+    'event_callback': callback
+  });
+
+  return false;
+}
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cortinas de Enrollar | Cortinas Deluxe</title>
@@ -33,7 +50,7 @@
             <h1 class="cm-h1">Cortinas de<br><em>Enrollar</em> a medida.</h1>
             <p class="cm-hero-desc" style="max-width: 600px;">Reemplazamos tu vieja cortina respetando las guías originales o instalamos sistemas completos desde cero con accesorios de grado industrial.</p>
             <div class="cm-hero-actions">
-                <a href="https://wa.me/5491125831604?text=Hola%20Cortinas.Deluxe%2C%20quiero%20solicitar%20un%20presupuesto%20para%20mis%20cortinas." onclick="gtag('event', 'conversion', {'send_to': 'AW-18227093387/MOEfCOaE9eMcEIu_rfND'});" class="cm-btn-primary">Solicitar cotización</a>
+                <a href="https://wa.me/5491125831604?text=Hola%20Cortinas.Deluxe%2C%20quiero%20solicitar%20un%20presupuesto%20para%20mis%20cortinas." onclick="return gtag_report_conversion(this.href);" class="cm-btn-primary">Solicitar cotización</a>
             </div>
         </div>
     </section>
